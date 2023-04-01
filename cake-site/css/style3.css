@@ -8,9 +8,8 @@
   }
   
   body {
-    margin-top: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b8b517;
   }
   
   p {
