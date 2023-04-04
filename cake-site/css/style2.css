@@ -1,77 +1,62 @@
-* {
-    margin: 0;
-  }
-  
-  html,
-  body {
-    height: 100%;
-  }
-  
-  body {
+@import "reset.css";
+
+body {
     margin-top: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  }
-  
-  p {
-    margin: 0.5em 0 0.5em 0;
-  }
-  
-  header {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #a493c0;
-    padding: 10px;
-  }
-  
-  nav a:visited,
-  nav a:link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav > ul {
-    display: inline;
+#mainheader {
+    background-color: #a593c2;
+}
+
+nav {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-  }
-  
-  nav > ul > li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px 0 5px;
-  }
-  
-  main {
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
     display: block;
-    background-image: url("images/background.png");
-    padding-top: 3em;
-    padding-bottom: 3em;
-    min-height: 85%;
-  }
-  
-  footer {
-    padding: 15px;
-  }
-  
-  aside,
-  article {
-    padding: 2em;
-  }
-  
-  aside {
+    color: white;
     text-align: center;
-  }
-  
-  article {
-    width: 75%;
-  }
-  
-  .columns {
-    display: flex;
-  }
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#leftmenu {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#main {
+    float: right;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+}
+
+.searchbox {
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
   
   @media only screen and (min-width: 768px) {
     main {
